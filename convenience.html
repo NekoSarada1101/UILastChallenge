@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>便利機能</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+<h1>便利機能</h1>
+<div>
+
+  <h3>目標金額までの道のり計算</h3>
+
+  <form>
+    <div>
+      目標金額<input type="number" id="money" required>
+    </div>
+
+    <div>
+      到達希望日<input type="date" id="date" required>
+    </div>
+
+    <div>
+      <button type="button" onclick="calc()">計算</button>
+    </div>
+  </form>
+
+  <p id="remaining"></p>
+</div>
+
+<div>
+
+  <h3>迷った時に決める機能</h3>
+  <div>
+    <ul>
+      <li>案１<input type="text" id="idea0"></li>
+      <li>案２<input type="text" id="idea1"></li>
+      <li>案３<input type="text" id="idea2"></li>
+      <li>案４<input type="text" id="idea3"></li>
+      <li>案５<input type="text" id="idea4"></li>
+    </ul>
+
+    <button type="button" onclick="random()">決定</button>
+
+    <p id="determination"></p>
+  </div>
+</div>
+</body>
+
+<script src="js/convenience.js"></script>
+
+</html>

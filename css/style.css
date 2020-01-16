@@ -1,0 +1,37 @@
+body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.delete, .menu {
+    cursor: pointer;
+}
+
+.menu_bar {
+    position: fixed;
+    top: -62px;
+    transition: all 300ms 0ms ease;
+    z-index: 20;
+}
+
+.menu_bar_anime {
+    transform: translateY(90px);
+}
+
+.card {
+    left: 300px;
+}
+
+#top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 1000px;
+    z-index: 999;
+}
+
+#top i{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

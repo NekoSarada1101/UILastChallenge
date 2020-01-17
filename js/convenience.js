@@ -17,7 +17,12 @@ calc.addEventListener("click", function () {
 
     // 残りの日数
     var remaining_days = date.getTime() - today.getTime();
-    remaining_days = Math.floor(remaining_days / 1000 / 60 / 60 / 24) + 2;
+    if(remaining_days <= 0){
+        alert("明日以降の日付を入力してください");
+        return;
+    }
+
+    remaining_days = Math.ceil(remaining_days / 1000 / 60 / 60 / 24);
 
     // 1日あたりの金額
     var price_each_one_day = Math.floor(money / remaining_days);

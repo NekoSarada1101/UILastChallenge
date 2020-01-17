@@ -1,6 +1,7 @@
 var menu = document.querySelector(".menu");
-var menubar = document.getElementById("menu_bar");
 
 menu.addEventListener("click", function () {
+    var menubar = document.getElementById("menu_bar");
+
     menubar.classList.toggle("menu_bar_anime");
 }, false);

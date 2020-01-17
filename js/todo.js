@@ -1,11 +1,12 @@
+//TODOリスト//////////////////////////////////////////////////////
 var addTask = document.querySelector(".add");
 var list = document.querySelector(".list");
 
 addTask.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    var task = addTask.add.value.trim();
-    task.replace(/\r?\n/g, "");
+    var task = addTask.add.value.trim(); //空白削除
+    task.replace(/\r?\n/g, ""); //改行コード置き換え
     if (task.length !== 0) {
         createTodoList(task);
         addTask.reset();
@@ -21,6 +22,7 @@ var createTodoList = function (task) {
     list.innerHTML += html;
 };
 
+//TODO削除
 list.addEventListener("click", function (e) {
     if (e.target.classList.contains("delete")) {
         e.target.parentNode.remove();

@@ -4,32 +4,33 @@
     <title>便利機能</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!--Font Awesoome-->
+    <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <!--    Flat UI-->
+    <!--Flat UI-->
     <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
     <link href="dist/css/flat-ui.min.css" rel="stylesheet">
+    <!--Original-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container-fluid text-center col-lg-6 col-md-8 col-sm-10 ml-auto mr-auto p-0 pb-5">
+<body class="container-fluid col-lg-6 col-md-8 col-sm-10 text-center ml-auto mr-auto p-0 pb-5">
 <header class="text-left bg-dark pl-2">
     <i class="fas fa-bars text-white menu"></i>
 </header>
 
 <div class="menu_bar" id="menu_bar">
     <a href="convenience.html">
-        <div class="border border-dark bg-light text-right pr-2 pl-2">便利機能</div>
+        <div class="border border-dark bg-light text-right pl-2 pr-2">便利機能</div>
     </a>
     <a href="movie.html">
-        <div class="border border-dark bg-light border-top-0 text-right pr-2 pl-2">お気に入りの動画</div>
+        <div class="border border-dark bg-light border-top-0 text-right pl-2 pr-2">お気に入りの動画</div>
     </a>
 </div>
 
 <p id="top" class="bg-dark p-2 pt-3"><i class="fas fa-angle-double-up text-light"></i></p>
 
-<div class="col-md-10 col-12 mr-auto ml-auto">
+<div class="col-md-10 col-12 ml-auto mr-auto">
     <h3 class="mt-3">便利機能</h3>
     <div class="p-3">
         <strong>目標金額までの道のり計算</strong>
@@ -43,10 +44,14 @@
             </div>
 
             <div>
-                <button type="button" onclick="calc(), progress_bar_anime()" class="col-9 btn btn-lg btn-primary">計算</button>
+                <button type="button" onclick="progress_bar_anime()" class="col-9 btn btn-lg btn-primary calc">計算</button>
             </div>
         </form>
         <strong id="remaining" class="text-info"></strong>
+
+        <div class="select2-display-none pig">
+            <img src="img/pig.png" alt="豚貯金箱" width="50" height="50">
+        </div>
 
         <div class="row">
             <p class="col-4 text-left mb-0" id="day_first"></p>
@@ -64,7 +69,7 @@
     </div>
 </div>
 
-<div class="col-sm-10 col-12 mr-auto ml-auto mt-5 p-3">
+<div class="col-sm-10 col-12 mt-5 ml-auto mr-auto p-3">
     <strong>迷った時に決める機能</strong>
     <div>
         <ul class="list-group list-unstyled">
@@ -84,16 +89,16 @@
                 <div class="input-group"><span class="input-group-text">案5</span><input type="text" id="idea4" class="form-control"></div>
             </li>
         </ul>
-        <button type="button" onclick="random()" class="col-9 btn btn-lg btn-block btn-primary ml-auto mr-auto">決定</button>
+        <button type="button" onclick="random()" class="col-9 btn btn-lg btn-block btn-primary ml-auto mr-auto random">決定</button>
         <strong id="determination" class="text-info"></strong>
     </div>
 </div>
 
-<div class="col-sm-10 col-12 mr-auto ml-auto mt-5 p-3">
+<div class="col-sm-10 col-12 mt-5 ml-auto mr-auto p-3">
     <strong>TODOリスト</strong>
 
     <ul class="list list-group list-unstyled">
-        <!--    タスク追加場所-->
+        <!--タスク追加場所-->
     </ul>
 
     <form class="add">
@@ -101,7 +106,153 @@
         <input type="text" name="add" placeholder="new text" class="form-control ml-auto mr-auto">
     </form>
 </div>
-</body>
+
+<div class="demo-content staggering-grid-demo ml-auto mr-auto">
+    <div class="grid">
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+        <div class="small square el" style="transform: scale(1);"></div>
+    </div>
+    <div class="grid shadow">
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+        <div class="small square"></div>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="dist/js/vendor/jquery.min.js"></script>
@@ -116,10 +267,26 @@
     function progress_bar_anime() {
         anime({
             targets: '.progress',
-            width: ["0%", "100%"], // -> from '28px' to '100%',
+            width: ["0%", "100%"],
+            easing: 'easeInOutQuad'
+        });
+        anime({
+            targets: '.pig',
+            width: ["10%", "190%"],
             easing: 'easeInOutQuad'
         });
     }
+    anime({
+        targets: '.staggering-grid-demo .el',
+        scale: [
+            {value: .1, easing: 'easeOutSine', duration: 500},
+            {value: 1, easing: 'easeInOutQuad', duration: 1200}
+        ],
+        delay: anime.stagger(200, {grid: [14, 5], from: 'center'}),
+        direction: 'alternate',
+        loop: true
+    });
 </script>
 
+</body>
 </html>
